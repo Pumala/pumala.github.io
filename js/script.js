@@ -131,7 +131,7 @@ $(document).ready(function() {
     $(".js-wp-6").waypoint(function(direction) {
         $(".js-wp-6").addClass("animated slideInUp");
     }, {
-        offset: "50%"
+        offset: "60%"
     });
 
 });
