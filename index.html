@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
 </head>
-<body>
+<body ng-app="personal_website_app" ng-controller="PersonalWebsiteController">
 
     <header id="header">
         <div class="wrapper">
@@ -108,7 +108,13 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="projects-content">
-                <a href="http://pumala.github.io/todolist/" target="_blank"><img class="bodyPics" src="images/todolist.png" alt="To-do List image"></a>
+              <div ng-mouseover="img_is_active = true" ng-init="img_is_active = false" ng-mouseleave="img_is_active = false" class="bodyPicDiv">
+                <img class="bodyPics" ng-class="{boldColors: img_is_active}" src="images/todolist.png" alt="To-do List image">
+                <div class="projectBtnDiv" ng-show="img_is_active">
+                  <a href="http://pumala.github.io/todolist/" target="_blank">Live Demo</a>
+                  <a href="http://pumala.github.io/todolist/" target="_blank">Get Repo</a>
+                </div>
+              </div>
                 <a href="https://pumala.github.io/websiteproject/" target="_blank"><img class="bodyPics" src="images/websiteproject.png" alt="website project image"></a>
                 <a href="http://pumala.github.io/calculator/" target="_blank"><img class="bodyPics" src="images/calculator.png" alt="calculator image"></a>
                 <a href="https://pumala.github.io/randomquotes/" target="_blank"><img class="bodyPics" src="images/randomquotes.png" alt="random quotes image"></a>
@@ -259,6 +265,7 @@
 
 <!-- JavaScript -->
 <script src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/angular.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/active_nav.js"></script>
 <script src="js/script.js"></script>

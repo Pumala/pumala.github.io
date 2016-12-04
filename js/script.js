@@ -1,3 +1,14 @@
+var app = angular.module('personal_website_app', []);
+
+app.controller('PersonalWebsiteController', function($scope) {
+  $scope.img_is_active = false;
+  console.log('yes it is i think');
+  console.log($scope.img_is_active);
+  if ($scope.img_is_active) {
+    console.log('yes it is');
+  }
+});
+
 var menuIcon = document.getElementById("menuIcon");
 var header = document.getElementById("header");
 var mainNav = document.getElementById("main-nav");

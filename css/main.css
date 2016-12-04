@@ -261,6 +261,7 @@ h1 {
     -webkit-flex-wrap: wrap; /* Safari 6.1+ */
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 .projects-content a {
     width: 100%;
@@ -271,10 +272,23 @@ h1 {
     transition: .3s;
     opacity: 0.5;
 }
-#projects img:hover {
+#projects .boldColors {
+  opacity: 1;
+}
+#projects .bodyPicDiv:hover {
     transform: scale(.97);
     transition: .3s;
-    opacity: 1;
+}
+.projectBtnDiv a {
+  background-color: darkorange;
+  padding: 7px 9px;
+  border-radius: 5px;
+  display: inline;
+  position: relative;
+  bottom: 50px;
+}
+.projectBtnDiv a:hover {
+  background-color: yellow;
 }
 /*************************************
               CONTACT SECTION
