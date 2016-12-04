@@ -263,7 +263,7 @@ h1 {
     flex-wrap: wrap;
     text-align: center;
 }
-.projects-content a {
+.bodyPicDiv {
     width: 100%;
 }
 #projects img {
@@ -494,7 +494,7 @@ textarea:active {
         padding: 4% 2%;
     }
     .code-icons,
-    .projects-content a {
+    .bodyPicDiv {
         width: 50%;
     }
     .label-item {
@@ -585,7 +585,7 @@ textarea:active {
       margin-left: 100px;
     }
     .code-icons,
-    .projects-content a {
+    .bodyPicDiv {
         width: 33.3333333%;
     }
 }
@@ -596,7 +596,7 @@ textarea:active {
         width: 29.3333333%;
         padding: 0 2%;
     }
-    .projects-content a {
+    .bodyPicDiv {
 /*        width: 287.5px;*/
         width: 262.5px;
     }
