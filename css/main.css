@@ -279,13 +279,22 @@ h1 {
     transform: scale(.97);
     transition: .3s;
 }
+.projectBtnDiv {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
 .projectBtnDiv a {
   background-color: darkorange;
   padding: 7px 9px;
   border-radius: 5px;
   display: inline;
-  position: relative;
-  bottom: 50px;
+}
+.projectBtnDiv a:first-child {
+  margin-right: 10px;
+}
+.projectBtnDiv a:last-child {
+  margin-left: 10px;
 }
 .projectBtnDiv a:hover {
   background-color: yellow;
