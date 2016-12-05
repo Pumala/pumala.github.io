@@ -270,10 +270,10 @@ h1 {
     float: left;
     width: 100%;
     transition: .3s;
-    opacity: 0.5;
+    opacity: 1;
 }
-#projects .boldColors {
-  opacity: 1;
+#projects .half_opacity {
+  opacity: 0.5;
 }
 #projects .bodyPicDiv:hover {
     transform: scale(.97);
@@ -286,9 +286,11 @@ h1 {
 }
 .projectBtnDiv a {
   background-color: darkorange;
+  color: #fff;
   padding: 7px 9px;
   border-radius: 5px;
   display: inline;
+  transition: 0.3s;
 }
 .projectBtnDiv a:first-child {
   margin-right: 10px;
@@ -297,7 +299,9 @@ h1 {
   margin-left: 10px;
 }
 .projectBtnDiv a:hover {
-  background-color: yellow;
+  background-color: gold;
+  color: darkorange;
+  transition: 0.3s;
 }
 /*************************************
               CONTACT SECTION
