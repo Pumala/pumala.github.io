@@ -124,6 +124,10 @@ h1 {
 #about .heading h2 {
     font-size: 2em;
 }
+#about .heading h3 {
+    font-size: 1.2em;
+    margin-top: 1.5em;
+}
 #about .heading span {
     color: rgb(241, 130, 50);
     font-weight: bold;
