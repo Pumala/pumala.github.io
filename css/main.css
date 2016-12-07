@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     font-size: 1em;
-    background: url("images/handmadepaper.png") center;
+    background: url("../images/handmadepaper.png") center;
     font-family: 'Cagliostro', sans-serif;
 }
 h1, button, label,
