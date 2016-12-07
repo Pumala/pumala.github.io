@@ -1,13 +1,35 @@
 var app = angular.module('personal_website_app', []);
 
-app.controller('PersonalWebsiteController', function($scope) {
-  $scope.img_is_active = false;
-  console.log('yes it is i think');
-  console.log($scope.img_is_active);
-  if ($scope.img_is_active) {
-    console.log('yes it is');
-  }
+app.controller('PersonalWebsiteController', function($scope, $window) {
+  // $scope.smallWidth = true;
+  // $scope.resize = function() {
+  //   console.log($window.innerWidth);
+  //   if ($window.innerWidth < 600) {
+  //     $scope.img_is_active1 = true;
+  //   } else {
+  //     $scope.img_is_active1 = false;
+  //   }
+  // }
+  // $scope.resize();
+  // $window.onResize = resize;
+  // console.log($window.innerWidth);
+  // $scope.img_is_active = false;
+  // console.log('yes it is i think');
+  // console.log($scope.img_is_active);
+  // if ($scope.img_is_active) {
+  //   console.log('yes it is');
+  // }
 });
+// var app = angular.module('personal_website_app', []);
+//
+// app.controller('PersonalWebsiteController', function($scope) {
+//   $scope.img_is_active = false;
+//   console.log('yes it is i think');
+//   console.log($scope.img_is_active);
+//   if ($scope.img_is_active) {
+//     console.log('yes it is');
+//   }
+// });
 
 var menuIcon = document.getElementById("menuIcon");
 var header = document.getElementById("header");

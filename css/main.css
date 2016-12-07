@@ -269,6 +269,7 @@ h1 {
 }
 .bodyPicDiv {
     width: 100%;
+    position: relative;
 }
 #projects img {
     float: left;
@@ -276,7 +277,16 @@ h1 {
     transition: .3s;
     opacity: 1;
 }
-#projects .half_opacity {
+.projectBtnDiv {
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+.projectBtnDiv.smallWidth {
+  display: block;
+}
+/*#projects .half_opacity {
   opacity: 0.5;
   transition: 0.3s;
 }
@@ -284,15 +294,9 @@ h1 {
     transform: scale(.97);
     transition: .3s;
 }
-.projectBtnDiv {
-  display: none;
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-}
 .projectBtnDiv.block {
   display: block;
-}
+}*/
 .projectBtnDiv a {
   background-color: darkorange;
   color: #fff;
@@ -518,6 +522,20 @@ textarea:active {
     .code-icons,
     .bodyPicDiv {
         width: 50%;
+    }
+    .projectBtnDiv {
+      display: none;
+    }
+    #projects .half_opacity {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+    #projects .bodyPicDiv:hover {
+        transform: scale(.97);
+        transition: .3s;
+    }
+    .projectBtnDiv.block {
+      display: block;
     }
     .label-item {
         width: 20%;
