@@ -266,54 +266,35 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    margin: auto;
+    width: 94%;
 }
 .bodyPicDiv {
     width: 100%;
     position: relative;
 }
 #projects img {
-    float: left;
     width: 100%;
     transition: .3s;
     opacity: 1;
 }
-/*Code before revamping*/
-/*.projectBtnDiv {
-  display: block;
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-}*/
-/* Revamping Code below*/
+
 .projectBtnDiv {
-  background-color: gold;
   width: 90%;
   margin: 10% auto;
+  padding: 1em auto 5em auto;
 }
 .projectBtnDiv h3 {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 .projectBtnDiv p {
-  font-size: 1em;
+  font-size: 1.1em;
   margin: 1em 0 2em 0;
+  line-height: 1.5em;
 }
-
-
-
 .projectBtnDiv.smallWidth {
   display: block;
 }
-/*#projects .half_opacity {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-#projects .bodyPicDiv:hover {
-    transform: scale(.97);
-    transition: .3s;
-}
-.projectBtnDiv.block {
-  display: block;
-}*/
 .projectBtnDiv a {
   background-color: darkorange;
   color: #fff;
@@ -450,11 +431,6 @@ textarea:active {
 .social-icons p {
   margin-bottom: .75em;
 }
-/*.social-icons i:hover,
-.fa-chevron-circle-up:hover {
-    color: rgba(241, 130, 50, .6);
-    transition: .5s;
-}*/
 
 /*************************************
             FOOTER SECTION
@@ -542,14 +518,24 @@ textarea:active {
     }
     .projectBtnDiv {
       display: none;
+      color: #fff;
+    }
+    #projects img {
+      float: left;
+      width: 100%;
     }
     #projects .half_opacity {
-      opacity: 0.5;
+      opacity: 0.4;
       transition: 0.3s;
     }
     #projects .bodyPicDiv:hover {
-        transform: scale(.97);
+        transform: scale(.93);
         transition: .3s;
+        background-color: #000;
+    }
+    #projects .bodyPicDiv:hover .projectBtnDiv {
+      position: absolute;
+      left: 15px;
     }
     .projectBtnDiv.block {
       display: block;
