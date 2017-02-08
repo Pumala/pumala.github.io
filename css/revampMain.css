@@ -287,6 +287,9 @@ h1 {
 .projectBtnDiv h3 {
   font-size: 1.5em;
 }
+.projectBtnDiv .music h3 {
+  font-size: 1.25em;
+}
 .projectBtnDiv p {
   font-size: 1.1em;
   margin: 1em 0 2em 0;
