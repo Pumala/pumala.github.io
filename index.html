@@ -59,7 +59,7 @@
                 <div class="about-item wayPt js-wp-1">
                     <h2>Who</h2>
                     <hr>
-                    <p>Originally from Boston, MA, I am a tenacious, warm, and free-spirited individual who is always ready to hit the ground running. I love humming, playing the ukulele, and coming up with new melodies. Also, since living with three guys, I've grown very fond of craft beer, and am always on the hunt for them, preferably stouts.</p>
+                    <p>Originally from Boston, MA, I am a tenacious, warm, and free-spirited individual who is always ready to hit the ground running. I love humming, playing the ukulele, and coming up with new melodies. Also, after living with three guys, I've grown very fond of craft beer, and am always on the hunt for them, preferably stouts.</p>
                     </div>
                     <!-- When I'm not coding, you can also find me . -->
                 <div class="about-item wayPt js-wp-3">
@@ -357,7 +357,19 @@
                   </div>
                 </div>
               </div>
-
+              <div ng-mouseover="img_is_active18 = true" ng-init="img_is_active18 = false" ng-mouseleave="img_is_active18 = false" class="bodyPicDiv">
+                <img class="bodyPics" ng-class="{half_opacity: img_is_active18}" src="images/movie_app.png" alt="Twitter App image">
+                <div class="projectBtnDiv" ng-class="{block: img_is_active18}">
+                  <div class="">
+                    <h3>Twitter Clone</h3>
+                    <p>
+                      HTML / CSS / AngularJS / NodeJS / MongoDB / Express
+                    </p>
+                    <a href="http://saywhatnow.life/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/Pumala/redo_twitter" target="_blank">Github</a>
+                  </div>
+                </div>
+              </div>
 
 
                 <!-- <a href="https://pumala.github.io/websiteproject/" target="_blank"><img class="bodyPics" src="images/websiteproject.png" alt="website project image"></a> -->
